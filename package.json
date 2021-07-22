@@ -1,0 +1,21 @@
+{
+  "name": "breaking-bad",
+  "version": "1.0.0",
+  "description": "Proyecto para consumir API de Breaking Bad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/julianperna/js-0-100/src/master/breaking%20bad/"
+  },
+  "keywords": [
+    "Breaking",
+    "Bad",
+    "API",
+    "Javascript"
+  ],
+  "author": "Julián Perna",
+  "license": "MIT"
+}
