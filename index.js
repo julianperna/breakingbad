@@ -32,13 +32,12 @@ async function fetchCharcters(a){
     results.map(result => {
         const htmlString = `<img src="${result.img}" class="img">
             <div class="info-display">
-                <h5>Nombre Actor: ${result.portrayed}</h5>
+                <h5>Portrayed: ${result.portrayed}</h5>
                 <hr>
-                <h6>Nombre: <span>${result.name}</span></h6>
-                <h6>Apodo: <span>${result.nickname}</span></h6>
-                <h6>Serie: <span>${result.category}</span></h6>
-                <h6>Estado: <span>${result.status === "Alive" ? "Vivo" : "Muerto"
-            }</span></h6>
+                <h6>Name: <span>${result.name}</span></h6>
+                <h6>Nickname: <span>${result.nickname}</span></h6>
+                <h6>Category: <span>${result.category}</span></h6>
+                <h6>Status: <span>${result.status}</span></h6>
             </div>`;
     
     let salidaString = document.createElement('div');
