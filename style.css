@@ -1,34 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Poppins:wght@400;700&display=swap");
+
 body {
-  background-image: url("img/bb-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #1e8250;
 }
 html {
   scroll-behavior: smooth;
 }
 .barra {
-  background-color: #56776c;
+  background-color: #066337;
 }
-.navbar-light .navbar-toggler-icon {
-    border: none;
-  }
-  .navbar-nav {
-    align-items: center;
-  }
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
 header img {
   height: 100px;
 }
-
+a {
+  color: #fff !important;
+}
 .gif-spinner img {
   width: 200px;
 }
-
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.container {
+  width: 100%;
+}
+.texto {
+  border: 1px solid #066337;
+  color: #fff;
+  width: 480px;
+  display: flex;
+  height: 50px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #066337;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.copyright {
+  color: #fff;
+  font-size: 18px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  width: 100%;
+}
 .img {
   width: 100%;
   height: 24rem;
 }
 .icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.fa-flask {
   font-size: 30px;
+  color: #9ef01a;
+  transform: translate(1rem, -0.3rem);
+  -webkit-transform: translate(1rem, -0.3rem);
+  -moz-transform: translate(1rem, -0.3rem);
+  -ms-transform: translate(1rem, -0.3rem);
+  -o-transform: translate(1rem, -0.3rem);
 }
 .info-display {
   position: absolute;
@@ -40,18 +91,130 @@ header img {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-
+.navbar-brand {
+  margin-left: 1rem;
+}
 .img-info:hover > .info-display {
   display: block;
 }
-
+.link {
+  color: #fff;
+  font-size: 18px;
+  font-family: "JetBrains Mono", monospace;
+}
+.link:hover {
+  background: #b8a739;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
 hr {
   background-color: white;
 }
-
+.portada {
+  width: 100%;
+  height: 350px;
+  object-position: center;
+  object-fit: contain;
+}
+.repositorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fa-github {
+  margin-top: 10px;
+  color: #9ef01a;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.codigo {
+  font-size: 20px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
 span {
   font-weight: lighter;
 }
 .footer {
-  color: rgb(30, 230, 11);
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: #066337;
+  padding-top: 10px;
+}
+@media screen and (min-width: 320px) {
+  .banner a {
+    height: 160px;
+  }
+  .portada{
+    height: 160px;
+  }
+  .texto {
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .banner{
+    width: 100%;
+  }
+.portada{
+  height: 185px;
+}
+.form-control {
+    margin-top: 1rem;
+}
+}
+@media screen and (min-width: 768px) {
+  .banner{
+    max-width: 700px;
+  }
+.portada{
+  max-width: 600px;
+  width: 24rem;
+}
+.form-control {
+    margin-top: 1rem;
+    width: 430px;
+    margin-left: -30px;
+}
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .banner a {
+    display: block;
+    height: 350px;
+  }
+  .portada {
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: contain;
+    margin-top: -1rem;
+  }
+  .texto {
+    width: 480px;
+    font-size: 1.7rem;
+  }
+    .form-control {
+    margin-left: 0px;
+    width: 500px;
+    margin-top: 0;
+}
+  
 }

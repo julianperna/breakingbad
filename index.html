@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breaking Bad API</title>
+  <title>Breaking Bad</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -19,26 +19,27 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <link rel="icon" type="icon/png" href="favicon.png">
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-light barra fixed-top">
-    <i class="fas fa-flask icono text-success"></i><a class="navbar-brand" href="#"> Inicio</a>
-    <button class="navbar-toggler-icon d-md-none" type="button" data-toggle="collapse"
-      data-target="#navbarNavSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false"
-      aria-label="Toggle navigation">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavSupportedContent">
-      <ul class="navbar-nav mr-auto ">
 
-        <i class="fas fa-info-circle text-warning icono"></i>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark barra">
+    <a href="#"><i class="fas fa-flask icono " aria-hidden="true" ></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon ml"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto ">
         <li class="nav-item active">
-          <a class="nav-link " href="#Acerca">
+          <a class="navbar-brand link " href="#"> Inicio</a>
+        <li class="nav-item ">
+          <a class="nav-link link  " href="#Acerca">
             Acerca
           </a>
         </li>
-        <i class="far fa-file-alt text-info icono"></i>
         <li class="nav-item">
-          <a class="nav-link " href="#Repositorio">
+          <a class="nav-link link " href="#Repositorio">
             Repositorio
           </a>
         </li>
@@ -46,33 +47,33 @@
     </div>
   </nav>
   <div class="container">
-    <header class="text-center mt-3 pt-5 ">
-      <img src="img/bb-logo.png">
-    </header>
     <div class="row mt-4">
+      <picture class="banner">
+        <a target="_blank" href="https://www.youtube.com/watch?v=rJnjxvgvkBM"><img class="portada"
+            src="img/breakingbad.png" alt="portada de breaking bad"></a>
+      </picture>
       <div class="col-md-6 mx-auto">
         <input type="text" id="inp-search" class="form-control" placeholder="Buscar Personajes...">
       </div>
     </div>
     <div class="container mt-3" id="Acerca">
-      <h2 class="text-center text-success">Acerca de los personajes</h2>
+      <h2 class="texto">Acerca de los personajes</h2>
       <section class="mt-4">
         <div class="row" id="salida">
         </div>
       </section>
     </div>
-    <div class="container mt-2" id="Repositorio">
-      <h2 class="text-center m-0 text-success">Repositorio</h2>
-      <footer class="container-fluid mt-2 footer">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-3 col-md-3 col-12 text-center ">
-            <a href="https://github.com/julianperna/breakingbad/" target="_blank">
-              <i class="fab fa-github fa-2x text-info icono" aria-hidden="true"></i></a>
-            <p class="text-success mt-2">Copyright © 2021 Julián Perna.</p>
-          </div>
-        </div>
-      </footer>
-      <script src="index.js"></script>
+    <div class="container mt-2 repositorio" id="Repositorio">
+      <h2 class="texto ">Repositorio</h2>
+      <a href="https://github.com/julianperna/breakingbad" target="_blank">
+        <i class="fab fa-github fa-2x " aria-hidden="true"></i></a>
+      <span class="codigo">Código</span>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="copyright"> © 2022 Julián Perna </p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
