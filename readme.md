@@ -13,6 +13,6 @@ En este repositorio encontraras la API de Breaking Bad utilizando Vanilla JS com
 
 [Visita la api](https://breakingbadapi.com)
 <br>
-[Deploy de la página web](breabad.netlify.app/)
+[Deploy de la página web](https://breabad.netlify.app/)
 
 </div>
